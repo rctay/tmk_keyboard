@@ -1,6 +1,8 @@
 From: Tay Ray Chuan <rctay89@gmail.com>
-Subject: [PATCH] t/rc/alt-fallthrough
+Subject: [PATCH] alternative layer uses TRNS for non-normal keys
 
-<patch description>
+This allows us to focus on specifying the alternative layout's (normal) key placing.
+
+FUNC's were left as not sure if TRNS works for them.
 
 Signed-off-by: Tay Ray Chuan <rctay89@gmail.com>
