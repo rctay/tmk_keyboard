@@ -46,7 +46,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   {KC_TRNS, KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,  KC_TRNS, KC_TRNS},
   {KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,    KC_TRNS,   KC_TRNS, KC_TRNS,   KC_TRNS, KC_TRNS, KC_TRNS,  KC_TRNS}
 },
-[7] = { /* numpad */
+#define LAYER_NUMPAD 7
+[LAYER_NUMPAD] = { /* numpad */
   {KC_TRNS,  KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    /*u*/KC_P7,    KC_P8,    KC_P9,    KC_TRNS,   KC_TRNS},
   {KC_TRNS,  KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    /*j*/KC_P4,    KC_P5,    KC_P6,    KC_TRNS,  KC_TRNS},
   {KC_TRNS, KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_TRNS,    KC_P1,    KC_P2,    KC_P3,  KC_TRNS, KC_TRNS},
@@ -63,7 +64,7 @@ const uint16_t PROGMEM fn_actions[] = {
 
     [5] = ACTION_LAYER_TAP_KEY(5, KC_COMM),
     [6] = ACTION_LAYER_TAP_KEY(6, KC_DOT),
-    [7] = ACTION_LAYER_TOGGLE(7),
+    [7] = ACTION_FUNCTION(NUMLOCK_FN),
 
 };
 
