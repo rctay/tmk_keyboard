@@ -55,6 +55,22 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 },
 };
 
+enum function_id {
+    NUMLOCK_FN,
+};
+
+void action_function(keyrecord_t *record, uint8_t id, uint8_t opt)
+{
+    switch(id) {
+    case NUMLOCK_FN:
+        add_key(KC_NLCK);
+        send_keyboard_report();
+        del_key(KC_NLCK);
+        send_keyboard_report();
+        layer_invert(LAYER_NUMPAD);
+    }
+}
+
 const uint16_t PROGMEM fn_actions[] = {
     [1] = ACTION_LAYER_MOMENTARY(2),  // to RAISE
     [2] = ACTION_LAYER_MOMENTARY(3),  // to LOWER
