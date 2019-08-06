@@ -8,6 +8,7 @@
 #define _DVORAK 2
 #define _LOWER 3
 #define _RAISE 4
+#define _DEAD 5
 #define _ADJUST 15
 #define _FN3 5
 //#define _FN4 6
@@ -34,6 +35,7 @@ enum custom_keycodes {
 #define KC_LUP RAISE
 #define KC_X3 LT(_LOWER,KC_SPC)
 #define KC_X4 LT(_RAISE,KC_ENT)
+#define FUNC_J LT(_DEAD,KC_J)
 
 #define KC_ESCT MT(MOD_LCTL, KC_ESC)
 #define KC_GUIT M(0)
@@ -64,7 +66,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
        KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,     KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,
        KC_QUOT,KC_COMM, KC_DOT, KC_P  , KC_Y  ,KC_TRNS,     KC_TRNS, KC_F  , KC_G  , KC_C  , KC_R  , KC_L  ,
         KC_A  , KC_O  , KC_E  , KC_U  , KC_I  ,KC_TRNS,     KC_TRNS, KC_D  , KC_H  , KC_T  , KC_N  , KC_S  ,
-       KC_SCLN, KC_Q  , KC_J  , KC_K  , KC_X  ,KC_TRNS,     KC_TRNS, KC_B  , KC_M  , KC_W  , KC_V  , KC_Z  ,
+       KC_SCLN, KC_Q  , FUNC_J, KC_K  , KC_X  ,KC_TRNS,     KC_TRNS, KC_B  , KC_M  , KC_W  , KC_V  , KC_Z  ,
                        KC_TRNS,KC_TRNS,                                     KC_TRNS,KC_TRNS,
                                        KC_TRNS,KC_TRNS,     KC_TRNS,KC_TRNS,
                                        KC_TRNS,KC_TRNS,     KC_TRNS,KC_TRNS,
@@ -90,6 +92,18 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
        KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,     KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,KC_BSLS,KC_TRNS,
        KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,     KC_LDWN,KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,
                        KC_TRNS,KC_TRNS,                                     KC_PGUP,KC_PGDN,
+                                       KC_TRNS,KC_TRNS,     KC_TRNS,KC_TRNS,
+                                       KC_TRNS,KC_TRNS,     KC_TRNS,KC_TRNS,
+                                       KC_TRNS,KC_TRNS,     KC_TRNS,KC_TRNS
+	),
+
+	[_DEAD] = LAYOUT(
+       KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,     KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,
+       KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,     KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,
+       KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,     KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,
+       KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,     KC_TRNS,KC_TRNS,KC_TRNS,KC_ENT ,KC_DEL,KC_TRNS,
+       KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,     KC_TRNS,KC_TRNS,KC_BSPC,KC_TRNS,KC_TRNS,KC_TRNS,
+                       KC_TRNS,KC_TRNS,                                     KC_TRNS,KC_TRNS,
                                        KC_TRNS,KC_TRNS,     KC_TRNS,KC_TRNS,
                                        KC_TRNS,KC_TRNS,     KC_TRNS,KC_TRNS,
                                        KC_TRNS,KC_TRNS,     KC_TRNS,KC_TRNS
