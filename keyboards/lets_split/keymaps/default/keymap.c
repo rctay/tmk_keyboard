@@ -50,10 +50,10 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                         KC_GRV,KC_LALT,                                     KC_RALT,KC_SLSH,
                                     //+--65---+-------+    +--66---+-------+
                                     //+--6.5--+-------+    +--6.7--+-------+
-                                       KC_LGUI,KC_LCTL,     KC_RCTL,KC_RGUI,
+                                       KC_LGUI, KC_X3 ,      KC_X4 ,KC_RGUI,
                                     //+--68---+-------+    +--70---+-------+
                                     //+--7.6--+--7.4--+    +--7.9-+7.7-----+
-                                       KC_X3  ,KC_LEFT,      KC_UP , KC_X4 ,
+                                       KC_LCTL,KC_LEFT,      KC_UP ,KC_RCTL,
                                     //+--72---+-------+    +--74---+-------+
                                     //+--7.5--+--7.3--+    +--7.10-+7.8----+
                                        KC_UP  ,KC_DOWN,     KC_LEFT,KC_RIGHT
