@@ -47,16 +47,16 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_Z  , KC_X  , KC_C  , KC_V  , KC_B  ,KC_LSFT,     KC_RSFT, KC_N  , KC_M  ,KC_COMM, KC_DOT,KC_SLSH,
                     //+--61---+-------+-------+-------+    +-------+-------+---63--+-------+
                     //+--6.3--+-------+-------+-------+    +-------+-------+--6.9--+-------+
-                       KC_LEFT,KC_RIGHT,                                     KC_UP ,KC_DOWN,
+                        KC_GRV,KC_LALT,                                     KC_RALT,KC_SLSH,
                                     //+--65---+-------+    +--66---+-------+
                                     //+--6.5--+-------+    +--6.7--+-------+
-                                       KC_BSPC,KC_LSFT,      KC_ENT, KC_SPC,
+                                       KC_LGUI,KC_LCTL,     KC_RCTL,KC_RGUI,
                                     //+--68---+-------+    +--70---+-------+
                                     //+--7.6--+--7.4--+    +--7.9-+7.7-----+
-                                       KC_GUIT,KC_PSCR,     KC_HOME, KC_DEL,
+                                       KC_LDWN, KC_END,     KC_PGUP, KC_LUP,
                                     //+--72---+-------+    +--74---+-------+
                                     //+--7.5--+--7.3--+    +--7.10-+7.8----+
-                                       KC_LDWN, KC_GRV,      KC_END, KC_LUP
+                                       KC_SPC ,KC_HOME,     KC_PGDN, KC_ENT
 	),
 
 	[_DVORAK] = LAYOUT(
