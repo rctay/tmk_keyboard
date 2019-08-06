@@ -32,8 +32,8 @@ enum custom_keycodes {
 
 #define KC_LDWN LOWER				//Numpad
 #define KC_LUP RAISE
-#define KC_X3 LT(_FN3,KC_TAB)		//function layer 4 ie macros when held tab when pressed
-#define KC_X4 LT(_ADJUST, KC_ENT) //Shift when held enter when pressed
+#define KC_X3 LT(_FN3,KC_ESC)		//function layer 4 ie macros when held tab when pressed
+#define KC_X4 LT(_ADJUST, KC_TAB) //Shift when held enter when pressed
 
 #define KC_ESCT MT(MOD_LCTL, KC_ESC)
 #define KC_GUIT M(0)
