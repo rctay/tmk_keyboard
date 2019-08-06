@@ -53,10 +53,10 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                                        KC_LGUI,KC_LCTL,     KC_RCTL,KC_RGUI,
                                     //+--68---+-------+    +--70---+-------+
                                     //+--7.6--+--7.4--+    +--7.9-+7.7-----+
-                                       KC_X3  , KC_NO ,      KC_NO , KC_X4 ,
+                                       KC_X3  ,KC_LEFT,      KC_UP , KC_X4 ,
                                     //+--72---+-------+    +--74---+-------+
                                     //+--7.5--+--7.3--+    +--7.10-+7.8----+
-                                       KC_NO  , KC_NO ,      KC_NO , KC_NO
+                                       KC_UP  ,KC_DOWN,     KC_LEFT,KC_RIGHT
 	),
 
 	[_DVORAK] = LAYOUT(
