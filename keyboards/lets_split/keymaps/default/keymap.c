@@ -32,8 +32,8 @@ enum custom_keycodes {
 
 #define KC_LDWN LOWER				//Numpad
 #define KC_LUP RAISE
-#define KC_X3 LT(_FN3,KC_ESC)		//function layer 4 ie macros when held tab when pressed
-#define KC_X4 LT(_ADJUST, KC_TAB) //Shift when held enter when pressed
+#define KC_X3 LT(_LOWER,KC_SPC)
+#define KC_X4 LT(_RAISE,KC_ENT)
 
 #define KC_ESCT MT(MOD_LCTL, KC_ESC)
 #define KC_GUIT M(0)
@@ -53,10 +53,10 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                                        KC_LGUI,KC_LCTL,     KC_RCTL,KC_RGUI,
                                     //+--68---+-------+    +--70---+-------+
                                     //+--7.6--+--7.4--+    +--7.9-+7.7-----+
-                                       KC_LDWN, KC_NO ,      KC_NO , KC_LUP,
+                                       KC_X3  , KC_NO ,      KC_NO , KC_X4 ,
                                     //+--72---+-------+    +--74---+-------+
                                     //+--7.5--+--7.3--+    +--7.10-+7.8----+
-                                       KC_SPC , KC_NO ,      KC_NO , KC_ENT
+                                       KC_NO  , KC_NO ,      KC_NO , KC_NO
 	),
 
 	[_DVORAK] = LAYOUT(
