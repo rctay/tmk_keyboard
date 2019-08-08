@@ -34,7 +34,7 @@ enum custom_keycodes {
 #define KC_LDWN LOWER				//Numpad
 #define KC_LUP RAISE
 #define KC_X3 LT(_LOWER,KC_SPC)
-#define KC_X4 LT(_RAISE,KC_ENT)
+#define KC_X4 LT(_RAISE,KC_BSPC)
 #define FUNC_J LT(_DEAD,KC_J)
 
 #define KC_ESCT MT(MOD_LCTL, KC_ESC)
@@ -46,7 +46,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_1  , KC_2  , KC_3  , KC_4  , KC_5  ,KC_RBRC,     KC_LBRC, KC_6  , KC_7  , KC_8  , KC_9  , KC_0  ,
         KC_Q  , KC_W  , KC_E  , KC_R  , KC_T  , KC_EQL,     KC_MINS, KC_Y  , KC_U  , KC_I  , KC_O  , KC_P  ,
         KC_A  , KC_S  , KC_D  , KC_F  , KC_G  , KC_TAB,     KC_RSFT, KC_H  , KC_J  , KC_K  , KC_L  ,KC_SCLN,
-        KC_Z  , KC_X  , KC_C  , KC_V  , KC_B  ,KC_LSFT,     KC_BSPC, KC_N  , KC_M  ,KC_COMM, KC_DOT,KC_SLSH,
+        KC_Z  , KC_X  , KC_C  , KC_V  , KC_B  ,KC_LSFT,     KC_ENT , KC_N  , KC_M  ,KC_COMM, KC_DOT,KC_SLSH,
                     //+--61---+-------+-------+-------+    +-------+-------+---63--+-------+
                     //+--6.3--+-------+-------+-------+    +-------+-------+--6.9--+-------+
                         KC_GRV,KC_LALT,                                     KC_RALT,KC_SLSH,
