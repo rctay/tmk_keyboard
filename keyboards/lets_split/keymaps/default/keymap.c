@@ -49,13 +49,13 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_Z  , KC_X  , KC_C  , KC_V  , KC_B  ,KC_LSFT,     KC_RSFT, KC_N  , KC_M  ,KC_COMM, KC_DOT,KC_SLSH,
                     //+--61---+-------+-------+-------+    +-------+-------+---63--+-------+
                     //+--6.3--+-------+-------+-------+    +-------+-------+--6.9--+-------+
-                        KC_GRV,KC_LALT,                                     KC_RALT,KC_SLSH,
+                        KC_GRV,KC_LALT,                                     KC_RCTL,KC_SLSH,
                                     //+--65---+-------+    +--66---+-------+
                                     //+--6.5--+-------+    +--6.7--+-------+
                                         KC_X3 ,KC_LGUI,     KC_RGUI, KC_X4 ,
                                     //+--68---+-------+    +--70---+-------+
                                     //+--7.6--+--7.4--+    +--7.9-+7.7-----+
-                                       KC_ESCT,KC_LEFT,      KC_UP ,KC_RCTL,
+                                       KC_ESCT,KC_LEFT,      KC_UP ,KC_RALT,
                                     //+--72---+-------+    +--74---+-------+
                                     //+--7.5--+--7.3--+    +--7.10-+7.8----+
                                        KC_DOWN,KC_UP  ,    KC_RIGHT,KC_LEFT
