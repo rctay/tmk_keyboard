@@ -37,7 +37,7 @@ enum custom_keycodes {
 #define KC_X4 LT(_RAISE,KC_BSPC)
 #define FUNC_J LT(_DEAD,KC_J)
 
-#define KC_F11T MT(MOD_LCTL, KC_F11)
+#define KC_F11T MT(MOD_LGUI, KC_F11)
 #define KC_GUIT M(0)
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
@@ -52,10 +52,10 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                        KC_LSFT,KC_LALT,                                     KC_RCTL,KC_ENT ,
                                     //+--65---+-------+    +--66---+-------+
                                     //+--6.5--+-------+    +--6.7--+-------+
-                                        KC_X3 ,KC_LGUI,     KC_RSFT, KC_X4 ,
+                                        KC_X3 ,KC_F11T,     KC_RSFT, KC_X4 ,
                                     //+--68---+-------+    +--70---+-------+
                                     //+--7.6--+--7.4--+    +--7.9-+7.7-----+
-                                       KC_F11T,KC_LEFT,     KC_RGUI,KC_RIGHT,
+                                       KC_LCTL,KC_LEFT,     KC_RGUI,KC_RIGHT,
                                     //+--72---+-------+    +--74---+-------+
                                     //+--7.5--+--7.3--+    +--7.10-+7.8----+
                                        KC_DOWN,KC_UP  ,     KC_UP  ,KC_LEFT
@@ -89,7 +89,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
        KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,     KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,
        KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,     KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,KC_SLCK,
        KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,     KC_TRNS,KC_LPRN,KC_LBRC,KC_LCBR,KC_INS ,KC_BRK ,
-       KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,     KC_TRNS,KC_SLSH,KC_MINS,KC_EQL ,KC_BSLS,KC_PSCR,
+       KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,     KC_TRNS,KC_QUES,KC_MINS,KC_EQL ,KC_BSLS,KC_PSCR,
        KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,     KC_LDWN,KC_TRNS,KC_MNXT,KC_VOLD,KC_VOLU,KC_MPLY,
                        KC_TRNS,KC_TRNS,                                     KC_PGUP,KC_PGDN,
                                        KC_TRNS,KC_TRNS,     KC_TRNS,KC_TRNS,
